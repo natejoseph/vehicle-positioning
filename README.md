@@ -1,3 +1,5 @@
+# Vehicle Positioning and LoS/NLoS Signal Classification using ML and ANNs
+
 **Neural Networks**
 
 **ECE 553**
@@ -122,96 +124,96 @@ LoS/NLoS classification and vehicle position estimation.
 
 [Machine Learning Algorithm: Logistic Regression]{.underline}
 
--   Logistic regression is a machine learning algorithm that can be used
-    for binary classification tasks. It works by fitting a logistic
-    function to the data. The logistic function is a sigmoid function
-    that outputs a value between 0 and 1. The output of the logistic
-    function can be interpreted as the probability of the data belonging
-    to one of the two classes.
+- Logistic regression is a machine learning algorithm that can be used
+  for binary classification tasks. It works by fitting a logistic
+  function to the data. The logistic function is a sigmoid function
+  that outputs a value between 0 and 1. The output of the logistic
+  function can be interpreted as the probability of the data belonging
+  to one of the two classes.
 
--   Metrics:
+- Metrics:
 
-    -   Accuracy: 0.947
+  - Accuracy: 0.947
 
-    -   Precision: 0.987
+  - Precision: 0.987
 
-    -   Recall: 0.729
+  - Recall: 0.729
 
-    -   F1 score: 0.838
+  - F1 score: 0.838
 
 [Neural Network: Binary Classifier]{.underline}
 
--   A binary classifier neural network is a neural network that is
-    trained to perform binary classification tasks.
+- A binary classifier neural network is a neural network that is
+  trained to perform binary classification tasks.
 
--   Architecture:
+- Architecture:
 
-    -   Input layer: Batch size 32, 15000 nodes total
+  - Input layer: Batch size 32, 15000 nodes total
 
-    -   Hidden layers: 5 layers
+  - Hidden layers: 5 layers
 
-    -   Output layer: 2 nodes
+  - Output layer: 2 nodes
 
--   Activation function: ReLU
+- Activation function: ReLU
 
--   Loss function: Cross-entropy loss
+- Loss function: Cross-entropy loss
 
--   Optimizer: Adam
+- Optimizer: Adam
 
--   Epochs: 10
+- Epochs: 10
 
--   Metrics:
+- Metrics:
 
-    -   Accuracy: 0.740
+  - Accuracy: 0.740
 
-    -   Precision: 0.326
+  - Precision: 0.326
 
-    -   Recall: 0.367
+  - Recall: 0.367
 
-    -   F1 score: 0.345
+  - F1 score: 0.345
 
 **Vehicle Position Estimation**
 
 [Machine Learning Algorithm: Linear Regression]{.underline}
 
--   Linear regression is a machine learning algorithm that can be used
-    to predict a continuous variable. It works by fitting a linear
-    function to the data. The linear function is a function of one or
-    more independent variables that is used to predict the dependent
-    variable.
+- Linear regression is a machine learning algorithm that can be used
+  to predict a continuous variable. It works by fitting a linear
+  function to the data. The linear function is a function of one or
+  more independent variables that is used to predict the dependent
+  variable.
 
--   Metrics:
+- Metrics:
 
-    -   Mean squared error (MSE): 27.81
+  - Mean squared error (MSE): 27.81
 
-    -   Root mean squared error (RMSE): 5.27
+  - Root mean squared error (RMSE): 5.27
 
 [Neural Network: Arbitrary Artificial Neural Network]{.underline}
 
--   An arbitrary, custom neural network that can be used to solve a
-    variety of problems, including regression problems.
+- An arbitrary, custom neural network that can be used to solve a
+  variety of problems, including regression problems.
 
--   Architecture:
+- Architecture:
 
-    -   Input layer: Batch size 32, 15000 nodes total
+  - Input layer: Batch size 32, 15000 nodes total
 
-    -   Hidden layers: 4 layers
+  - Hidden layers: 4 layers
 
-    -   Output layer: 2 nodes
+  - Output layer: 2 nodes
 
--   Activation function: ReLU
+- Activation function: ReLU
 
--   Loss function: Mean squared error loss
+- Loss function: Mean squared error loss
 
--   Optimizer: Adam
+- Optimizer: Adam
 
--   Epochs: 10
+- Epochs: 10
 
--   Metrics:
+- Metrics:
 
-    -   MSE: 4.29
+  - MSE: 4.29
 
-    -   RMSE: 2.07
+  - RMSE: 2.07
 
 **Comparison of ML and ANN Models**
 
@@ -245,14 +247,14 @@ and on the right are the vehicle position runs. The top two screenshots
 display the regression models, and the bottom two display the neural
 networks.
 
-![](./image1.png){width="1.9097222222222223in"
-height="1.3173611111111112in"}![](./image2.png){width="2.1277777777777778in"
+![](./images/image1.png){width="1.9097222222222223in"
+height="1.3173611111111112in"}![](./images/image2.png){width="2.1277777777777778in"
 height="1.2194444444444446in"}
 
-![](./image3.png){width="1.7861111111111112in"
+![](./images/image3.png){width="1.7861111111111112in"
 height="1.7097222222222221in"}
 
-![](./image4.png){width="1.8381944444444445in"
+![](./images/image4.png){width="1.8381944444444445in"
 height="1.5694444444444444in"}
 
 **Conclusion**
@@ -271,20 +273,24 @@ models for LoS/NLoS classification and vehicle position estimation was
 evaluated by measuring the training time and testing time of each model.
 The results are shown in the following table:
 
-  -------------------------------------------------------------------------
-  Model               Task                   Training        Testing
-                                             time(s)         time(s)
-  ------------------- ---------------------- --------------- --------------
-  Logistic Regression LoS/NLoS               0.66            0.49
-                      Classification                         
+---
 
-  Binary Classifier                          5.54            .15
+Model Task Training Testing
+time(s) time(s)
 
-  Linear Regression   Vehicle Position       0.56            0.17
-                      Estimation                             
+---
 
-  Arbitrary ANN                              794.92          21.74
-  -------------------------------------------------------------------------
+Logistic Regression LoS/NLoS 0.66 0.49
+Classification
+
+Binary Classifier 5.54 .15
+
+Linear Regression Vehicle Position 0.56 0.17
+Estimation
+
+Arbitrary ANN 794.92 21.74
+
+---
 
 As shown in the table, the linear regression model was the most
 efficient to train and test, followed by the linear regression model.
@@ -298,39 +304,39 @@ The following table summarizes the comparative results of the LoS/NLoS
 classification and vehicle positioning methods used in this project:
 
 +-------------+-------------+-------------+-------------+-------------+
-| Method      | Task        | Accuracy    | Advantages  | Di          |
-|             |             |             |             | sadvantages |
+| Method | Task | Accuracy | Advantages | Di |
+| | | | | sadvantages |
 +=============+=============+=============+=============+=============+
-| Logistic    | LoS/NLoS    | 94.7%       | Simple and  | Less        |
-| Regression  | Cla         |             | efficient   | accurate    |
-|             | ssification |             |             | than a      |
-|             |             |             |             | proper      |
-|             |             |             |             | complex     |
-|             |             |             |             | neural      |
-|             |             |             |             | network     |
-|             |             |             |             | model       |
+| Logistic | LoS/NLoS | 94.7% | Simple and | Less |
+| Regression | Cla | | efficient | accurate |
+| | ssification | | | than a |
+| | | | | proper |
+| | | | | complex |
+| | | | | neural |
+| | | | | network |
+| | | | | model |
 +-------------+-------------+-------------+-------------+-------------+
-| Binary      |             | 74.0%       | Typically   | Less        |
-| Classifier  |             |             | more        | efficient   |
-|             |             |             | accurate    | than        |
-|             |             |             | than        | logistic    |
-|             |             |             | logistic    | regression  |
-|             |             |             | regression  | models, and |
-|             |             |             | models      | is reliant  |
-|             |             |             |             | on          |
-|             |             |             |             | resources   |
+| Binary | | 74.0% | Typically | Less |
+| Classifier | | | more | efficient |
+| | | | accurate | than |
+| | | | than | logistic |
+| | | | logistic | regression |
+| | | | regression | models, and |
+| | | | models | is reliant |
+| | | | | on |
+| | | | | resources |
 +-------------+-------------+-------------+-------------+-------------+
-| Linear      | Vehicle     | MSE: 27.81  | Simple and  | Less        |
-| Regression  | Positioning |             | efficient   | accurate    |
-|             |             | RMSE: 5.27  |             | than neural |
-|             |             |             |             | network     |
-|             |             |             |             | models      |
+| Linear | Vehicle | MSE: 27.81 | Simple and | Less |
+| Regression | Positioning | | efficient | accurate |
+| | | RMSE: 5.27 | | than neural |
+| | | | | network |
+| | | | | models |
 +-------------+-------------+-------------+-------------+-------------+
-| Arbitrary   |             | MSE: 3.95   | More        | Less        |
-| ANN         |             |             | accurate    | efficient   |
-|             |             | RMSE: 1.99  | than linear | than linear |
-|             |             |             | regression  | regression  |
-|             |             |             | models      | models      |
+| Arbitrary | | MSE: 3.95 | More | Less |
+| ANN | | | accurate | efficient |
+| | | RMSE: 1.99 | than linear | than linear |
+| | | | regression | regression |
+| | | | models | models |
 +-------------+-------------+-------------+-------------+-------------+
 
 While the ML models are good for applications where efficiency is more
@@ -342,15 +348,15 @@ accurate and efficient.
 In addition, there are a few other considerations to keep in mind when
 choosing a LoS/NLoS classification or vehicle positioning method:
 
--   **Robustness to noise**: Neural network models are generally more
-    robust to noise than regression models.
+- **Robustness to noise**: Neural network models are generally more
+  robust to noise than regression models.
 
--   **Interpretability**: Regression models are more interpretable than
-    neural network models.
+- **Interpretability**: Regression models are more interpretable than
+  neural network models.
 
--   **Computational resources**: Neural network models require more
-    computational resources to train and test than linear regression
-    models.
+- **Computational resources**: Neural network models require more
+  computational resources to train and test than linear regression
+  models.
 
 **Conclusion**
 
